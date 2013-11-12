@@ -37,7 +37,7 @@
 
       var loader = new THREE.ColladaLoader();
       loader.options.convertUpAxis = true;
-      loader.load( '/files/new.dae', function ( collada ) {
+      loader.load( '.../files/new.dae', function ( collada ) {
 
         dae = collada.scene;
         skin = collada.skins[ 0 ];
