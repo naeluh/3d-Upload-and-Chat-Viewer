@@ -1,12 +1,23 @@
-var app = require('express').createServer()
-var io = require('socket.io').listen(app);
+var express = require('express')
+  , app = express()
+  , http = require('http')
+  , server = http.createServer(app)
+  , io = require('socket.io').listen(server);
 
-app.listen(8080);
+server.listen(8095);
 
 // routing
+function chatRoute(req, res, next) {
+  res.sendfile(__dirname + '/3d-Upload-and-Chat-Viewer/js*');
+
+}
+
+app.get("/js*", chatRoute);
+
 app.get('/', function (req, res) {
   res.sendfile(__dirname + '/index.html');
 });
+
 
 // usernames which are currently connected to the chat
 var usernames = {};
@@ -40,9 +51,7 @@ io.sockets.on('connection', function (socket) {
   });
 
   socket.on('switchRoom', function(newroom){
-    // leave the current room (stored in session)
     socket.leave(socket.room);
-    // join new room, received as function parameter
     socket.join(newroom);
     socket.emit('updatechat', 'SERVER', 'you have connected to '+ newroom);
     // sent message to OLD room
@@ -52,6 +61,7 @@ io.sockets.on('connection', function (socket) {
     socket.broadcast.to(newroom).emit('updatechat', 'SERVER', socket.username+' has joined this room');
     socket.emit('updaterooms', rooms, newroom);
   });
+
 
   // when the user disconnects.. perform this
   socket.on('disconnect', function(){
