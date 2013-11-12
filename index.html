@@ -13,17 +13,17 @@
   </head>
   <body>
     <div id="container"></div>
-    <script src="js/Three.js"></script>
-    <script src="js/Detector.js"></script>
-    <script src="js/Stats.js"></script>
-    <!--<script src="js/raf.js"></script>-->
-    <script src="js/OrbitControls.js"></script>
-    <script src="js/THREEx.KeyboardState.js"></script>
-    <script src="js/THREEx.FullScreen.js"></script>
-    <script src="js/THREEx.WindowResize.js"></script>
+    <script src="./js/Three.js"></script>
+    <script src="./js/Detector.js"></script>
+    <script src="./js/Stats.js"></script>
+    <!--<script src="./js/raf.js"></script>-->
+    <script src="./js/OrbitControls.js"></script>
+    <script src="./js/THREEx.KeyboardState.js"></script>
+    <script src="./js/THREEx.FullScreen.js"></script>
+    <script src="./js/THREEx.WindowResize.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/ParticleEngine.js"></script>
-    <script src="js/ColladaLoader.js"></script>
+    <script src="./js/ParticleEngine.js"></script>
+    <script src="./js/ColladaLoader.js"></script>
     <!--<script src="js/ParticleEngineExamples.js"></script>-->
 
     <script defer="defer">
@@ -37,7 +37,7 @@
 
       var loader = new THREE.ColladaLoader();
       loader.options.convertUpAxis = true;
-      loader.load( '.../files/new.dae', function ( collada ) {
+      loader.load( './files/new.dae', function ( collada ) {
 
         dae = collada.scene;
         skin = collada.skins[ 0 ];
