@@ -5,8 +5,9 @@ A three.js enviroment with node.js/socket.io/express.js chat added to create a p
 and talked about in a group. 
 
 To Do list:
+
 1. Get it working
-2. Make it better
+
 
 
 
