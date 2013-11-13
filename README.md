@@ -1,11 +1,15 @@
-3d-Upload-and-Chat-Viewer
+3d-Upload-and-Chat-Viewr
 =========================
 
-3d Upload and Chat Viewer
+A three.js enviroment with node.js/socket.io/express.js chat added to create a place where the model can be uploaded 
+and talked about in a group. 
 
-The Gist 
-=========================
+To Do list:
 
-This is a three.js enviroment with node.js chat added to create a place where the model can talked about in a group. 
+1. Get it working
+
+
+
+
 
 
