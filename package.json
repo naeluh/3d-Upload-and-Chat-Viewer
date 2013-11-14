@@ -8,7 +8,6 @@
   "dependencies": {
     "express": "8",
     "ejs": "*",
-    "socket.io": "*",
-    "three": "8"
+    "socket.io": "*"
   }
 }
