@@ -6,8 +6,11 @@
     "start": "node app"
   },
   "dependencies": {
-    "express": "8",
+    "express": "*",
     "ejs": "*",
     "socket.io": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
