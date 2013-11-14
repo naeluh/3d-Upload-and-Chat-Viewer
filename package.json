@@ -1,9 +1,14 @@
 {
-     "name": "",
-     "description": "example chat application with socket.io",
-     "version": "0.0.1",
-     "dependencies": {
-        "express": "",
-        "socket.io": ""
-     }
+  "name": "viewer",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "8",
+    "ejs": "*",
+    "socket.io": "*",
+    "three": "8"
+  }
 }
