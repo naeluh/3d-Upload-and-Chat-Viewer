@@ -19,7 +19,7 @@ To Do list:
     c. emoticons ????
     
     
-I want this to work in its current stste 
+I want this to work in its current state 
 =========================
 
 1. git clone 
