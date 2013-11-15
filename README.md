@@ -6,7 +6,18 @@ and talked about in a group.
 
 To Do list:
 
-1. Get it working
+1. Add Rooms based off a routed url 
+ 
+2. Add model upload   
+
+2. Add better chat box styling
+    
+    a. typing should init from clicking box 
+
+    b. growl style notifications 
+    
+    c. emoticons ????
+  
 
 
 
