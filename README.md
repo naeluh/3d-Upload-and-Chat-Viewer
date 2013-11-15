@@ -17,6 +17,20 @@ To Do list:
     b. growl style notifications 
     
     c. emoticons ????
+    
+    
+I want this to work in its current stste 
+=========================
+
+1. git clone 
+
+2. node server.js
+
+3. go to http://localhost:8095
+
+    
+    
+    
   
 
 
